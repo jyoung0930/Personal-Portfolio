@@ -1,0 +1,73 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins&display=swap");
+
+/* font-family: 'Cedarville Cursive', cursive;
+font-family: 'Poppins', sans-serif; */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Content */
+body {
+  background: #191919;
+  max-width: 1300px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #a7a7a7;
+  margin: 10px;
+}
+
+.nav-links a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+
+.nav-links ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.logo {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+/* Hero Section */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  justify-items: center;
+  color: #d9d9d9;
+}
+.hero img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+}
+.hero h1 {
+  justify-self: start;
+}
