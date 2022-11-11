@@ -8,13 +8,32 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Main Content */
 body {
   background: #191919;
   max-width: 1200px;
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 10px;
+}
+
+/* Headings */
+
+.heading,
+.subheading {
+}
+.heading {
+  font-size: 48px;
+  color: #cccccc;
+}
+
+.subheading {
+  font-size: 25px;
+  color: #a7a7a7;
 }
 
 /* Nav */
@@ -82,22 +101,17 @@ nav {
 .projects {
   color: #cccccc;
   text-align: center;
-}
-
-.project-text-heading {
-  font-size: 48px;
-}
-
-.project-text-subheading {
-  color: #a7a7a7;
-  font-size: 32px;
+  margin: 50px 0;
 }
 
 .projects-grid {
   display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
   list-style: none;
+  justify-items: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .project {
@@ -105,10 +119,18 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 567px;
+  width: 350px;
+  border-radius: 10%;
 }
 
 .project-description {
   text-align: center;
+  height: 192px;
+  background: #363636;
+  width: 100%;
+  border-radius: 0px 0px 30px 30px;
+  padding: 5px;
 }
 
 .project-heading {
@@ -117,12 +139,27 @@ nav {
 }
 
 .project-info {
-  height: 250px;
-  width: 250px;
 }
 
 .project img {
   object-fit: cover;
-  height: 250px;
-  width: 250px;
+  width: 100%;
+  height: 375px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+/* Tech Stack Section */
+.tech-stack-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.tech-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+  margin: 50px 0;
 }
