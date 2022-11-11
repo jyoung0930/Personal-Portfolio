@@ -1,8 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins&display=swap");
-
-/* font-family: 'Cedarville Cursive', cursive;
-font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@400;700&display=swap");
 
 /* Global Styles */
 * {
@@ -14,16 +11,17 @@ font-family: 'Poppins', sans-serif; */
 /* Main Content */
 body {
   background: #191919;
-  max-width: 1300px;
+  max-width: 1200px;
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
 /* Nav */
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #a7a7a7;
   margin: 10px;
@@ -47,6 +45,7 @@ nav {
 
 .logo {
   font-family: "Cedarville Cursive", cursive;
+  font-size: 25px;
 }
 
 .icon {
@@ -58,16 +57,72 @@ nav {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  justify-items: center;
   color: #d9d9d9;
+  margin: 120px 0;
 }
 .hero img {
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  border: 5px solid #a7a7a7;
+  justify-self: end;
+}
+
+.hero-heading {
+  line-height: 70px;
+  text-align: left;
+  justify-self: start;
+  font-weight: 700;
+}
+
+/* Projects Section */
+
+.projects {
+  color: #cccccc;
+  text-align: center;
+}
+
+.project-text-heading {
+  font-size: 48px;
+}
+
+.project-text-subheading {
+  color: #a7a7a7;
+  font-size: 32px;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  list-style: none;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  text-align: center;
+}
+
+.project-heading {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.project-info {
   height: 250px;
   width: 250px;
-  border-radius: 100%;
 }
-.hero h1 {
-  justify-self: start;
+
+.project img {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
 }
