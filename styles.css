@@ -121,6 +121,9 @@ nav {
   border-radius: 10%;
 }
 
+.project-info {
+  text-align: center;
+}
 .project-description {
   text-align: center;
   height: 50%;
@@ -128,12 +131,13 @@ nav {
   background: #363636;
   width: 100%;
   border-radius: 0px 0px 30px 30px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .project-heading {
   font-weight: 700;
   font-size: 28px;
+  margin-bottom: 25px;
 }
 
 /* .project-info {
@@ -160,4 +164,21 @@ nav {
   justify-items: center;
   align-items: center;
   margin: 50px 0;
+}
+
+/* Media quiries */
+
+@media (max-width: 850px) {
+  .hero img {
+    justify-self: center;
+  }
+
+  .hero-heading {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .hero {
+    gap: 30px 0;
+  }
 }
