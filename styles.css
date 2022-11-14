@@ -40,19 +40,6 @@ html {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-.hamburger-menu {
-  height: 800px;
-  width: 300px;
-  background: orange;
-  position: fixed;
-  right: -100%;
-  transition: all 0.3s ease-in;
-}
-
-.slide {
-  right: 0%;
-}
-
 /* Main Content */
 body {
   background: #191919;
@@ -82,6 +69,7 @@ nav {
   align-items: center;
   color: #a7a7a7;
   margin: 10px;
+  position: relative;
 }
 
 .nav-links a {
@@ -210,6 +198,10 @@ nav {
 /* Media quiries */
 
 @media (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .hero img {
     justify-self: center;
   }
@@ -230,5 +222,20 @@ nav {
   .hamburger {
     display: block;
     z-index: 1000;
+  }
+
+  .hamburger-menu {
+    height: 92vh;
+    width: 70%;
+    background: pink;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+  }
+
+  .slide {
+    transform: translateX(0%);
   }
 }
