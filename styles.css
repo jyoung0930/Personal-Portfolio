@@ -28,27 +28,26 @@ body {
 
 /* Hamburger Nav */
 .hamburger-nav-links {
-  text-align: center;
   display: none;
   flex-direction: column;
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #a7a7a7;
+
+  background-color: black;
 }
 
 .hamburger-nav-links a {
   text-decoration: none;
-  color: black;
+  color: gray;
   font-size: 28px;
   font-weight: 700;
 }
 
-.hamburger-nav-links .icon {
-  background-color: black;
+.hamburger-nav-links img {
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
 }
 
 .bar1,
