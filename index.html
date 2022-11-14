@@ -8,129 +8,154 @@
     <title>Jaron Young</title>
   </head>
   <body>
-    <!-- Hamburger Menu -->
-    <div class="hamburger-menu"></div>
+    <div class="wrapper">
+      <!-- Hamburger Menu -->
+      <ul class="hamburger-nav-links">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/jyoung0930" target="_blank"
+            ><img
+              src="./icons&logos/Github Icon.svg"
+              class="icon"
+              alt="Github Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jaron-young-27a334115/"
+            target="_blank"
+            ><img
+              src="./icons&logos/linkedIn Icon.png"
+              class="icon"
+              alt="linked in logo"
+          /></a>
+        </li>
+      </ul>
 
-    <!-- Navigation -->
-    <nav id="about">
-      <div class="logo"><h1>Jaron Young</h1></div>
+      <!-- Navigation -->
+      <nav id="about">
+        <div class="logo"><h1>Jaron Young</h1></div>
 
-      <!-- Hamburger -->
-      <div class="hamburger">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+        <!-- Hamburger -->
+        <div class="hamburger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#tech">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="https://github.com/jyoung0930" target="_blank"
+                ><img
+                  src="./icons&logos/Github Icon.svg"
+                  class="icon"
+                  alt="Github Logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jaron-young-27a334115/"
+                target="_blank"
+                ><img
+                  src="./icons&logos/linkedIn Icon.png"
+                  class="icon"
+                  alt="linked in logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <div class="hero" id="hero">
+        <h1 class="hero-heading">
+          Hi 👋,<br />
+          My name is<br />
+          <span class="hero-name"> Jaron Young</span><br />
+          I build things for the web
+        </h1>
+        <img src="./Images/passgen.png" alt="" srcset="" />
       </div>
 
-      <div class="nav-links">
-        <ul>
-          <li><a href="#about">Home</a></li>
-          <li><a href="#tech">Tech Stack</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <!-- Projects -->
+      <div class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <h2 class="subheading">Things i've built</h2>
+        <ul class="projects-grid">
           <li>
-            <a href="https://github.com/jyoung0930" target="_blank"
-              ><img
-                src="./icons&logos/Github Icon.svg"
-                class="icon"
-                alt="Github Logo"
-            /></a>
+            <div class="project">
+              <img src="./Images/passgen.png" alt="project image" />
+              <div class="project-description">
+                <h3 class="project-heading">Password Generator</h3>
+                <p class="project-info">
+                  The password generator allows the user to enter a specific
+                  length and multiple conditions for a password. The app will
+                  also tell the user if the password is too short and if no
+                  conditions are checked.
+                </p>
+              </div>
+            </div>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/jaron-young-27a334115/"
-              target="_blank"
-              ><img
-                src="./icons&logos/linkedIn Icon.png"
-                class="icon"
-                alt="linked in logo"
-            /></a>
+            <div class="project">
+              <img src="./Images/portfolio.png" alt="project image" />
+              <div class="project-description">
+                <h3 class="project-heading">Landing page</h3>
+                <p class="project-info">
+                  A resposive landing page demonstrating my ability to use CSS
+                  grid and swiper JS for a fully functional scalable slideshow.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="./Images/advicegen.png" alt="project image" />
+              <div class="project-description">
+                <h3 class="project-heading">Advice Generator</h3>
+                <p class="project-info">
+                  In this project, the goal was to reach out to an API and
+                  generate data with each click of the button. This project was
+                  very fun and it generates valuable advice 😃
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img src="./Images/Color Picker.png" alt="project image" />
+              <div class="project-description">
+                <h3 class="project-heading">Color Picker</h3>
+                <p class="project-info">
+                  In this project, the goal was to reach out to the color API
+                  and generate colors on the page based on the users request.
+                </p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-    </nav>
-    <!-- Hero Section -->
-    <div class="hero" id="hero">
-      <h1 class="hero-heading">
-        Hi 👋,<br />
-        My name is<br />
-        <span class="hero-name"> Jaron Young</span><br />
-        I build things for the web
-      </h1>
-      <img src="./Images/passgen.png" alt="" srcset="" />
-    </div>
+      <!-- Stack Section -->
+      <div class="tech-stack-section" id="tech">
+        <h1 class="heading">My Tech Stack</h1>
+        <h2 class="subheading">Technologies I've been working with</h2>
 
-    <!-- Projects -->
-    <div class="projects" id="projects">
-      <h1 class="heading">Projects</h1>
-      <h2 class="subheading">Things i've built</h2>
-      <ul class="projects-grid">
-        <li>
-          <div class="project">
-            <img src="./Images/passgen.png" alt="project image" />
-            <div class="project-description">
-              <h3 class="project-heading">Password Generator</h3>
-              <p class="project-info">
-                The password generator allows the user to enter a specific
-                length and multiple conditions for a password. The app will also
-                tell the user if the password is too short and if no conditions
-                are checked.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project">
-            <img src="./Images/portfolio.png" alt="project image" />
-            <div class="project-description">
-              <h3 class="project-heading">Landing page</h3>
-              <p class="project-info">
-                A resposive landing page demonstrating my ability to use CSS
-                grid and swiper JS for a fully functional scalable slideshow.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project">
-            <img src="./Images/advicegen.png" alt="project image" />
-            <div class="project-description">
-              <h3 class="project-heading">Advice Generator</h3>
-              <p class="project-info">
-                In this project, the goal was to reach out to an API and
-                generate data with each click of the button. This project was
-                very fun and it generates valuable advice 😃
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project">
-            <img src="./Images/Color Picker.png" alt="project image" />
-            <div class="project-description">
-              <h3 class="project-heading">Color Picker</h3>
-              <p class="project-info">
-                In this project, the goal was to reach out to the color API and
-                generate colors on the page based on the users request.
-              </p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Stack Section -->
-    <div class="tech-stack-section" id="tech">
-      <h1 class="heading">My Tech Stack</h1>
-      <h2 class="subheading">Technologies I've been working with</h2>
-
-      <ul class="tech-grid">
-        <li><img src="./icons&logos/HTML logo.svg" /></li>
-        <li><img src="./icons&logos/Css logo.svg" /></li>
-        <li><img src="./icons&logos/Js Logo.svg" /></li>
-        <li><img src="./icons&logos/react logo.svg" /></li>
-        <li><img src="./icons&logos/Github Logo.svg" /></li>
-        <li><img src="./icons&logos/vs code logo.svg" /></li>
-      </ul>
+        <ul class="tech-grid">
+          <li><img src="./icons&logos/HTML logo.svg" /></li>
+          <li><img src="./icons&logos/Css logo.svg" /></li>
+          <li><img src="./icons&logos/Js Logo.svg" /></li>
+          <li><img src="./icons&logos/react logo.svg" /></li>
+          <li><img src="./icons&logos/Github Logo.svg" /></li>
+          <li><img src="./icons&logos/vs code logo.svg" /></li>
+        </ul>
+      </div>
     </div>
   </body>
   <script src="./index.js"></script>
