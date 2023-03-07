@@ -165,7 +165,7 @@ nav {
 
 .projects-grid {
   display: grid;
-  gap: 20px;
+  gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
   list-style: none;
   justify-items: center;
